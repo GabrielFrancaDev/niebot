@@ -1,0 +1,18 @@
+{
+    "prefix": "/",
+    "token": "ODE4OTUwNDkzMDE5NzAxMjY5.YEfhFA.gi8YsOQTJ6OiScobz4kYkfe__Mc",
+    "chatLog": "776099966883463199", 
+    "roleMember": "776094775727620107",
+
+    "permissions":{
+        "/debug":[
+            {
+            "type": "permission",
+            "value": "ADMINISTRATOR"
+            }
+        ]
+
+    }
+        
+    
+}
