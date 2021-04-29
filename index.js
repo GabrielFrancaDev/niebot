@@ -4,6 +4,7 @@ const client = new Discord.Client();
 const config = require('./config.json')
 const commands = require('./scripts/commandsReader')(config.prefix);
 const verPermissao = require('./scripts/verPermissao')
+require('dotenv').config()
 //#endregion
 
 
@@ -17,6 +18,7 @@ client.on('message', msg =>{
     if(msg.author.bot || !msg.guild){
         return;
     }
+    
     
     const args = msg.content.split(' ')
     if(commands[args[0]]){
@@ -35,5 +37,4 @@ client.on('guildMemberRemove', member => {
     chatLog.send(`${member.displayName} saiu do servidor, é hora da caçada`)
 })
 
-
-client.login(config.token);
+client.login(process.env.TOKEN);
